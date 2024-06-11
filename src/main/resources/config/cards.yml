@@ -1,0 +1,11 @@
+build:
+    version: "1.0.0"
+
+cards:
+    message: "Learning how to create microservices - here: cards"
+    contact:
+        name: "Carlo Cobol, Cards - Developer"
+        email: "carlo@heinzi.de"
+    support:
+        - +49 171 44455556
+        - +49 800 77778888
