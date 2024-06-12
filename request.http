@@ -1,0 +1,25 @@
+@url = http://localhost:8071
+
+# health
+GET {{url}}/actuator/health
+###
+GET {{url}}/actuator/health/readiness
+###
+GET {{url}}/actuator/health/liveness
+###
+
+# encrypt
+POST {{url}}/encrypt
+Content-Type: text/plain
+
+Arthur Arbeiter, Product Owner
+
+###
+
+# decrypt
+POST {{url}}/decrypt
+Content-Type: text/plain
+
+efdbe9c2beef5f38a28a908f9fbd641ddb5928a8e3bcd57e4f2d28c59a8cc0ab7fd2f65c41c714d48162eeb1a1ebecd6
+
+###
