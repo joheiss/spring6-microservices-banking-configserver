@@ -63,7 +63,7 @@
 				<configuration>
 					<image>
 						<builder>paketobuildpacks/builder-jammy-full</builder>
-						<name>joheiss/sb3-${project.artifactId}:v1</name>
+						<name>joheiss/sb3-${project.artifactId}:v2</name>
 					</image>
 				</configuration>
 			</plugin>
