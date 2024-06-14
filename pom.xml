@@ -60,11 +60,23 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<!--
 				<configuration>
 					<image>
 						<builder>paketobuildpacks/builder-jammy-full</builder>
 						<name>joheiss/sb3-${project.artifactId}:v2</name>
 					</image>
+				</configuration>
+				-->
+			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.2</version>
+				<configuration>
+					<to>
+						<image>joheiss/sb3-${project.artifactId}:v3</image>
+					</to>
 				</configuration>
 			</plugin>
 		</plugins>
