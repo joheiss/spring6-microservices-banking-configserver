@@ -37,8 +37,17 @@ management:
           show-details: always
           probes:
               enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
 
 encrypt:
   key: "IIEpAIBAAKCAQEAwOsN8Wiq4g7J3dQ8U4NlW+Tuz"
 
-        
+logging:
+  level:
+    com:
+      jovisco: debug
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
+    
